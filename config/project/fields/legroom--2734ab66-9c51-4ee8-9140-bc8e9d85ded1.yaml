@@ -1,0 +1,14 @@
+columnSuffix: rcchbgkr
+contentColumnType: boolean
+fieldGroup: 1db72d00-009d-4313-9e97-1e659520360e # Common
+handle: legroom
+instructions: ' takes up the whole row '
+name: Legroom
+searchable: false
+settings:
+  default: false
+  offLabel: 'No'
+  onLabel: Wiiiiide
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

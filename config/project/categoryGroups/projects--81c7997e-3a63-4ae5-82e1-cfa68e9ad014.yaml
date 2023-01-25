@@ -1,0 +1,46 @@
+defaultPlacement: end
+fieldLayouts:
+  f755b6d1-e989-415c-9ab3-54d3a5b98a41:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 6bbeb25f-9e3b-428c-a119-4b53d16f8139
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 53523ee9-f5b2-4c31-91f5-6668f90daaed
+        userCondition: null
+handle: projects
+name: Projects
+siteSettings:
+  9e983e3d-f7b6-40bc-9b32-e5d8f980dd57: # zeus
+    hasUrls: true
+    template: null
+    uriFormat: 'projects/{slug}'
+structure:
+  maxLevels: 2
+  uid: f7e30232-536a-4e6e-b7fe-abd69ac60058

@@ -1,0 +1,14 @@
+columnSuffix: vwlnhsuj
+contentColumnType: boolean
+fieldGroup: 31e60dc3-d2f0-43aa-9fb0-49955900ab14 # Projects
+handle: thumbnailView
+instructions: 'enable thumbnail view'
+name: 'Thumbnail view'
+searchable: false
+settings:
+  default: true
+  offLabel: 'No'
+  onLabel: 'Yes'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

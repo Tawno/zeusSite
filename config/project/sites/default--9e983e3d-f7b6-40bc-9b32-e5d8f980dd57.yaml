@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: zeus
+primary: true
+siteGroup: 15c75a13-661e-4392-9e1a-056910ced471 # zeus
+sortOrder: 1

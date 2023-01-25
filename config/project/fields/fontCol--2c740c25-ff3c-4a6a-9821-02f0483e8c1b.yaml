@@ -1,0 +1,12 @@
+columnSuffix: jraefrwc
+contentColumnType: string(7)
+fieldGroup: 827245d1-6f19-4823-92e3-10d57c2c31ac # Global Fields
+handle: fontCol
+instructions: null
+name: 'Font colour'
+searchable: false
+settings:
+  defaultColor: '#ffffff'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Color

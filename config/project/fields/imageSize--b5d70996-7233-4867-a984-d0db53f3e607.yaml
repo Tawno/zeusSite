@@ -1,0 +1,45 @@
+columnSuffix: cfxissrr
+contentColumnType: string
+fieldGroup: 1db72d00-009d-4313-9e97-1e659520360e # Common
+handle: imageSize
+instructions: 'size image will take up on masonry'
+name: 'Image Size'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - standard
+        -
+          - value
+          - ''
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - large
+        -
+          - value
+          - grid-item--width2
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'v large'
+        -
+          - value
+          - grid-item--width3
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

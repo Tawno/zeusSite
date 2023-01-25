@@ -1,0 +1,55 @@
+fieldLayouts:
+  1b919197-2fbd-401d-85b9-b29c751673fa:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e7e9ed4c-3e4a-4a46-9f4f-b4d01d1f9a81
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 605b6e0f-a961-4b0d-99e9-2963c3302a6b # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 23ccea32-3d92-47bf-96a8-9ee20fd4b38b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6d9d4c5b-2d16-469f-9041-5b7888f80c5c
+        userCondition: null
+handle: contact
+hasTitleField: false
+name: Contact
+section: 5aafd681-aad9-49d8-a61b-bb1ec6a0c30e # Contact
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

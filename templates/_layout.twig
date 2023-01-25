@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>
+      Zeus Photo
+    </title>
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+    <meta name="description" content="{{ siteInfo.siteDescription }}" />
+    <link href="{{ currentSite.baseUrl }}css/splide-sea-green.min.css"
+      rel="stylesheet" />
+    <link href="{{ currentSite.baseUrl }}css/global.css" rel="stylesheet" />
+    <noscript><link href="{{ currentSite.baseUrl }}css/no-script.css" rel="stylesheet" /></noscript>
+    {% js '/js/masonry.pkgd.min.js' %}
+    {% js '/js/splide.min.js' %}
+    {% js '/js/imagesloaded.pkgd.min.js' %}
+     {% js '/js/jquery-3.6.3.min.js' %}
+       {% js %} 
+           document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('loader').classList.add('disable');
+});
+     var screenWidth = window.innerWidth
+       var masonCont = document.querySelector('.grid')
+       var msnry
+       imagesLoaded(masonCont, function(instance) {
+        masonCont.classList.add("active")
+        console.log('images loaded')
+        msnry =  new Masonry(masonCont, {
+         columnWidth: 24,
+         fitWidth: true,
+         gutter: 0
+       })
+       })
+   var infoBack = document.getElementById('infoBack');
+    var infoA = document.getElementById('infoAbout');
+    var infoC = document.getElementById('infoContact');
+     const aboutInfo = () => {
+      infoA.classList.add("active")
+       infoC.classList.remove("active")
+         if (screenWidth <= 960 ) {
+          infoBack.classList.add("active")
+         }
+    }   
+   const contactInfo = () => {
+       if (screenWidth <= 960 ) {
+          infoBack.classList.add("active")
+         }
+      infoC.classList.add("active");
+        infoA.classList.remove("active");
+    }  
+       function cleared() {
+         infoBack.classList.remove("active")
+        infoA.classList.remove("active");
+        infoC.classList.remove("active");
+       }
+      $('.content').on('contextmenu', 'img', function(e){ 
+  return false; 
+}); 
+       
+    {% endjs %}
+  </head>
+  <body style="background-color:{{ colors.background }};color:{{ colors.fontCol  }}">
+    <section>
+      <h1>
+        <a href="{{ siteUrl }}">{{ siteInfo.siteName }}</a>
+      </h1>
+    </section>
+    <section style="display:flex">
+    <div class="loader" id="loader"><span></span><span></span><span></span></div>
+    {% set contactInfo = craft.entries.section('contact').all() %}
+      {% set assets = craft.assets().volume('General') %}
+      {% set menu = {
+        width: 30,
+        height: 30
+      } %} 
+        <input type="checkbox" class="check" id="checked" onclick=cleared() />
+        <label class="menu-btn" for="checked">
+            {% for icon in assets.title('Menu').all() %}
+              <img src="{{ icon.getUrl(menu) }}"
+                alt="{{ icon.title }}"
+                style="filter:invert(1)" />
+            {% endfor %}
+        </label>
+        <div class="drawer">
+          <ul>
+          <li><a href="{{siteUrl}}">Featured</a></li>
+            <li><a href="{{ url('projects')}}">Projects</a></li>
+             <li><a href="{{ url('print')}}">Print</a></li>
+              <li onclick=aboutInfo()>About</li>
+                <li onclick=contactInfo()>Contact</li>
+          </ul>
+          <div class="info-box">
+         <p id="infoAbout" class="info">{% for about in craft.entries.section('about').all() %} {{ about.descr }}{% endfor %}</p>
+          <p id="infoContact" class="info">{% for contact in craft.entries.section('contact').all() %} {{ contact.descr }}{% endfor %}
+          <div class="back" id="infoBack" onclick=cleared()><</div></p>
+          </div>
+        </div>
+      <div id="container" >
+        <div id="main">
+          {% block content %}
+
+          {% endblock %}
+        </div>
+      </div>
+    </section>
+  </body>
+      
+</html>

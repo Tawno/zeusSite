@@ -1,0 +1,19 @@
+columnSuffix: dzvkefzi
+contentColumnType: text
+fieldGroup: 1db72d00-009d-4313-9e97-1e659520360e # Common
+handle: descr
+instructions: 'describe the world'
+name: Description
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

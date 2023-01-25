@@ -1,0 +1,36 @@
+
+{% js %}
+  
+const grid = document.querySelector('.grid')
+const splider = document.querySelector('.splide')
+const splideList = document.querySelector('.splide__list')
+const splideItems = document.getElementsByClassName('splide__slide')
+ var splide;
+function single(pid) {
+  if (screenWidth >= 960 )
+  {
+  grid.classList.remove("active")
+ splider.classList.add("active")
+  var num = +pid - 1
+ splide = new Splide( '.splide', { start:num}).mount();
+  }
+}
+function thumb(on) {
+  var thumbOn = on 
+  console.log(on)
+  splide.destroy()
+  if (thumbOn === false ) {
+      grid.classList.add("active")
+  } else {
+    grid.classList.add("active", "thumbnail")
+  }
+  splider.classList.remove("active")
+  msnry.destroy()
+     msnry =  new Masonry(masonCont, {
+         columnWidth: 24,
+         fitWidth: true,
+         gutter: 0
+       })
+}
+{% endjs %}
+

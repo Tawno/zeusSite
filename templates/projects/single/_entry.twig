@@ -1,0 +1,27 @@
+{% extends "_layout.twig" %}
+{% include "_entry.twig" with {project: posts.photoImg.all()} only %}
+
+ {# <a href="{{post.url}}"></a> #}
+ {% js %}
+document.addEventListener( 'DOMContentLoaded', function() { var
+    splide = new Splide( '.splide' ); splide.mount(); } );
+{% endjs %}
+{% block content %} 
+<div class="content">
+  <div class="splide" role="group" aria-label="test slide"> 
+    <div class="splide__track">
+      <div class="splide__list" >
+        {% for images in project %}
+        {% if block.type == 'image' %}
+        {% for %}
+        {% end if %}
+           <div class="splide__slide ">
+            <img alt="{{img.title}}" src="{{img.url}}">
+            <p>{{img.title}}</p>
+            </div>
+        {% endfor %}
+      </div>
+    <div class="splide__arrows"></div>
+  </div>
+</div>
+{% endblock %}

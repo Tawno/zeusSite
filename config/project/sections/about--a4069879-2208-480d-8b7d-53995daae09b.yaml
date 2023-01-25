@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: about
+name: About
+propagationMethod: all
+siteSettings:
+  9e983e3d-f7b6-40bc-9b32-e5d8f980dd57: # zeus
+    enabledByDefault: true
+    hasUrls: true
+    template: about/_entry
+    uriFormat: about
+type: single

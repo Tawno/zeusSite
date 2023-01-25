@@ -1,0 +1,12 @@
+defaultPlacement: beginning
+enableVersioning: true
+handle: print
+name: Print
+propagationMethod: all
+siteSettings:
+  9e983e3d-f7b6-40bc-9b32-e5d8f980dd57: # zeus
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: single

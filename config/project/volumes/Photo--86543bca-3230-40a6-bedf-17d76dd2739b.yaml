@@ -1,0 +1,79 @@
+fieldLayouts:
+  a283675f-63f5-4838-b73d-106e702b0f2a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: a057d6df-f1bf-49b4-9697-d48282b42278
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 605b6e0f-a961-4b0d-99e9-2963c3302a6b # Description
+            instructions: null
+            label: 'Visible Title'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: efc4e196-b309-4076-a0f7-9bda73e64b6c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b5d70996-7233-4867-a984-d0db53f3e607 # Image Size
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fbaa746b-0203-4678-98f2-b6a8a25a9f2e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2734ab66-9c51-4ee8-9140-bc8e9d85ded1 # Legroom
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ae51544a-c1a1-4f09-97c4-b76c6701a90b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 22249147-f723-4317-8600-80b8175d7baf
+        userCondition: null
+fs: photos
+handle: Photo
+name: Photo
+sortOrder: 1
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

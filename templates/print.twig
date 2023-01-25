@@ -1,0 +1,49 @@
+{% extends "_layout.twig" %}
+
+{% block content %}
+{% include "_render.twig" %}
+<div class="content">
+  <div id="projects" class="grid active" >
+  {% set thumb = true %}
+ {% set posts = craft.entries().section('print').one() %}
+    {% set images = posts.photoImg.all() %}
+    {% for img in images %}
+      {% if img.legroom %}
+      {% set legroomOn = "grid-item--legroom" %}
+      {% else %}
+       {% set legroomOn = "" %}
+      {% endif %}   
+      <div class="grid-item {{img.imageSize.value}} {{legroomOn}}"><div class="anchor" id="{{img.id}}" onclick=single({{loop.index}})>
+      <img alt="{{img.title}}" src="{{img.getUrl }}"></div>
+      </div>  
+    {% endfor %}
+  </div>
+   <div class="splide" role="group" aria-label="test slide"> 
+ <div class="thumb-btn" onclick=thumb({{ thumb }})>
+    {% set assets = craft.assets().volume('General') %}
+      {% set menu = {
+          width: 30,
+          height: 30
+        } %} 
+     {% for icon in assets.title('Thumbnail').all() %}
+        <img src="{{ icon.getUrl(menu) }}"
+                  alt="{{ icon.title }}"
+                  style="filter:invert(1)" />
+     {% endfor %}
+      </div>
+    <div class="splide__track">
+      <div class="splide__list" >
+          {% for img in images %}     
+          {% set image = img.photoImg.one()%}
+           <div class="splide__slide {{img.id}}">
+            <img alt="{{img.title}}" src="{{img.getUrl }}">
+            <p>{{img.descr}}</p>
+            </div>
+        {% endfor %}
+      </div>
+    <div class="splide__arrows"></div>
+
+  </div>
+ </div>
+{% endblock %}
+

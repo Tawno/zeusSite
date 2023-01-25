@@ -1,0 +1,66 @@
+dateModified: 1674475010
+email:
+  fromEmail: tawnorodman@gmail.com
+  fromName: zeus
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  general:
+    hasUrls: true
+    name: General
+    settings:
+      path: '@webroot/img/general'
+    type: craft\fs\Local
+    url: '@web/img/general'
+  photos:
+    hasUrls: true
+    name: Photos
+    settings:
+      path: '@webroot/img/photos'
+    type: craft\fs\Local
+    url: '@web/img/photos'
+meta:
+  __names__:
+    0a98f91c-53c7-41dd-bb49-b46df467bcbb: 'Thumbnail view' # Thumbnail view
+    1db72d00-009d-4313-9e97-1e659520360e: Common # Common
+    2c740c25-ff3c-4a6a-9821-02f0483e8c1b: 'Font colour' # Font colour
+    2d8ff5dc-be41-424a-8378-998749cb5fe9: colors # colors
+    3c3877e5-d9a3-4d31-af5c-b62f193298d8: Feature # Feature
+    3dd386ca-d6b3-42af-9c05-61fcd47c3761: Projects # Projects
+    5aafd681-aad9-49d8-a61b-bb1ec6a0c30e: Contact # Contact
+    6d123e44-e858-4020-95e1-ef6455332881: Default # Default
+    9e983e3d-f7b6-40bc-9b32-e5d8f980dd57: zeus # zeus
+    9fed08ab-b24e-478a-a5bc-ecab922d0a0f: Background # Background
+    15c75a13-661e-4392-9e1a-056910ced471: zeus # zeus
+    31e60dc3-d2f0-43aa-9fb0-49955900ab14: Projects # Projects
+    51c1edeb-9d9a-4b03-a25d-bfc68ac31166: 'Headline Image' # Headline Image
+    075b44d7-5195-4822-836e-3651da887f5b: Print # Print
+    78dd93ac-acdd-4b70-a6de-a7a48aa24238: 'Photo Image' # Photo Image
+    81c7997e-3a63-4ae5-82e1-cfa68e9ad014: Projects # Projects
+    216e1c62-f4d6-4a46-9ffa-c2fabb2cfd6d: Home # Home
+    605b6e0f-a961-4b0d-99e9-2963c3302a6b: Description # Description
+    999bbe15-9249-4c92-b35d-f353995cb78e: Feature # Feature
+    2082fbda-66e3-4892-9ca2-8e2c30210940: 'Site Info' # Site Info
+    2734ab66-9c51-4ee8-9140-bc8e9d85ded1: Legroom # Legroom
+    86543bca-3230-40a6-bedf-17d76dd2739b: Photo # Photo
+    179961f5-35f1-4ca0-9d60-c8f1ef417b03: 'Site Description' # Site Description
+    827245d1-6f19-4823-92e3-10d57c2c31ac: 'Global Fields' # Global Fields
+    9368975f-8f87-445d-8bf7-2e5775320b62: Contact # Contact
+    43573227-0f57-4599-8191-9fddf14efdcd: General # General
+    a4069879-2208-480d-8b7d-53995daae09b: About # About
+    b4dcc18c-0991-4ca7-9eb8-393b0348fb91: Print # Print
+    b5d70996-7233-4867-a984-d0db53f3e607: 'Image Size' # Image Size
+    e937062c-f6a2-4dcd-ac45-417e7d3b2862: About # About
+    f8cfb8a6-63d6-4b7b-befd-714756daebf4: siteName # siteName
+    fce8e697-8b96-4858-a9fc-76646aec184e: 'Home posts' # Home posts
+system:
+  edition: solo
+  live: true
+  name: zeus
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

@@ -1,0 +1,19 @@
+columnSuffix: hxdeeato
+contentColumnType: text
+fieldGroup: 827245d1-6f19-4823-92e3-10d57c2c31ac # Global Fields
+handle: siteDescription
+instructions: null
+name: 'Site Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

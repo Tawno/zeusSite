@@ -1,0 +1,36 @@
+fieldLayouts:
+  5d33a45e-7497-4fec-ba05-c3ad18ccd2c8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 9fed08ab-b24e-478a-a5bc-ecab922d0a0f # Background
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 91356efc-4a0f-461d-88f8-236e22ec0e53
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2c740c25-ff3c-4a6a-9821-02f0483e8c1b # Font colour
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8a556cd1-9717-427f-a8e3-dde2e18f0cb4
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Site Colours'
+        uid: 00779daa-b8cc-4a02-8f26-9e8deb66078d
+        userCondition: null
+handle: colors
+name: colors
+sortOrder: 2
