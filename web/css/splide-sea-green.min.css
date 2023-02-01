@@ -85,7 +85,7 @@
 }
 
 .splide__arrow:focus-visible {
-  outline: 3px solid #20b2aa;
+  outline: 3px solid rgb(32 178 170 / 0%);
   outline-offset: 3px
 }
 

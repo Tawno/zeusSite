@@ -22,8 +22,6 @@ body {
 body {
     margin: 0;
     padding: 0;
-    background-color: hsl(198, 48%, 76%);
-    color: hsl(209, 18%, 30%);
     display: flex;
     flex-direction: column;
 }
@@ -76,7 +74,7 @@ ul {
     list-style: none;
 }
 h2 {
-    line-height: auto;  
+    line-height: normal;  
 }
 ul li {
     margin-bottom: 0.35em;
@@ -133,10 +131,12 @@ margin-left: 18.125vw;}
     width: 408px;
     padding: 0;
 }
+.thumbnail .grid-item--legroom {
+    margin:6px 6px 12px 6px ;
+}
 .splide__slide img {
     width: auto;
     height: 42rem;
-    background-color: aquamarine;
 }
 .splide__slide {
     display: flex;
@@ -169,7 +169,7 @@ margin-left: 18.125vw;}
     justify-content: center;
     align-items: center;
     opacity: 0;
-    background-color: #222;
+    background-color: rgba(20, 12, 9, 0.88);
     height: 100%;
     width: 100%;
 }

@@ -12,7 +12,7 @@ function single(pid) {
   grid.classList.remove("active")
  splider.classList.add("active")
   var num = +pid - 1
- splide = new Splide( '.splide', { start:num}).mount();
+ splide = new Splide( '.splide', { start:num,type:'loop'}).mount();
   }
 }
 function thumb(on) {
